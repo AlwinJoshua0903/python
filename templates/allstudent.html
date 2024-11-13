@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Allstudent</title>
+    <link rel="stylesheet" href="/static/css/table.css">
+</head>
+<body>
+<h3>All Student List</h3>
+<table border="5">
+    <thead>
+    <tr>
+        <td>Studentid</td>
+        <td>studentname</td>
+        <td>Phonenumber</td>
+        <td>Address</td>
+        <td>Dateofbirth</td>
+        <td>Dateofjoining</td>
+        <td>Action</td>
+    </tr>
+    </thead>
+    {% for row in rows %}
+    <tr>
+        <td>{{row[0]}}</td>
+        <td>{{row[1]}}</td>
+        <td>{{row[2]}}</td>
+        <td>{{row[3]}}</td>
+        <td>{{row[4]}}</td>
+        <td>{{row[5]}}</td>
+        <td><a href="{{row[0]}}/editstudent">Edit</a><br><a href="{{row[0]}}/deletestudent">Delete</a> </td>
+    </tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>
