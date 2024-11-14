@@ -9,12 +9,12 @@
 <h3>Update the Student Info</h3>
 <form action="/updatetostudenttable"method="post">
     <table>
-        <tr><td>Id</td><td><input type="text" name="sid" value="{{rows[0][0]}}" readonly placeholder="Your Id"></td></tr>
-        <tr><td>Name</td><td><input type="text" name="sname" value="{{rows[0][1]}}" placeholder="Your Name"></td></tr>
-        <tr><td>Phonenumber</td><td><input type="text" name="sphone" value="{{rows[0][2]}}" placeholder="Your Phonenumber"></td></tr>
-        <tr><td>Address</td><td><input type="text" name="saddress" value="{{rows[0][3]}}" placeholder="Your Address"></td></tr>
-        <tr><td>Date of Birth</td><td><input type="date" name="sdob" value="{{rows[0][4]}}" placeholder="Your DOB"></td></tr>
-        <tr><td>Date of Joining</td><td><input type="date" name="sdoj" value="{{rows[0][5]}}" placeholder="Your DOJ"></td></tr>
+        <tr><td>Id</td><td><input type="text" name="sid" value="{{rows[0][0]}}" readonly placeholder="Your Id" required><span class="required">*</span></td></tr>
+        <tr><td>Name</td><td><input type="text" name="sname" value="{{rows[0][1]}}" placeholder="Your Name" required><span class="required">*</span></td></tr>
+        <tr><td>Phonenumber</td><td><input type="text" name="sphone" value="{{rows[0][2]}}" placeholder="Your Phonenumber" required><span class="required">*</span></td></tr>
+        <tr><td>Address</td><td><input type="text" name="saddress" value="{{rows[0][3]}}" placeholder="Your Address" required><span class="required">*</span></td></tr>
+        <tr><td>Date of Birth</td><td><input type="date" name="sdob" value="{{rows[0][4]}}" placeholder="Your DOB" required><span class="required">*</span></td></tr>
+        <tr><td>Date of Joining</td><td><input type="date" name="sdoj" value="{{rows[0][5]}}" placeholder="Your DOJ" required><span class="required">*</span></td></tr>
         <tr><td><input type="submit" name="update" value="update"></td></tr>
     </table>
 </form>
