@@ -36,7 +36,7 @@ body {
 /* Blinking effect for the message */
 .blinking {
     font-size: 20px;
-    color: #007bff;
+    color: green;
     white-space: nowrap; /* Prevent text from wrapping */
     animation: blink 1s step-start infinite; /* Blinking effect */
 }
@@ -48,15 +48,25 @@ body {
         }
 
         /* Styling for the link */
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            font-size: 16px;
-            color: #007bff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
+ a {
+display: inline-block;
+font-size: 18px;
+color: #007bff;
+text-decoration: none;
+padding: 10px 20px;
+border: 1px solid #007bff;
+border-radius: 5px;
+transition: background-color 0.3s, color 0.3s;
+margin: 10px;
+}
 
-        a:hover {
-            color: #0056b3;
-        }
+a:hover {
+background-color: #007bff;
+color: white;
+text-decoration: underline;
+}
+.doc{
+  display: inline-block; /* Makes the div take up only the space needed */
+    padding: 10px 20px; /* Adds space around the content inside the div */
+    border: 2px solid #3498db; /* Creates a rectangular border */
+    border-radius: 5px;}
